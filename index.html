@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+	function refresh(){
+		window.location.reload(true);
+	}
+	</script>
+	<title>JAVASCRIPT_TUtorial</title>
+</head>
+
+<body>
+
+	<input type="button" name="refresh" id="refresh" value="Urish tiv porcenq" onclick="refresh()"><br><br>
+
+
+	<script type="text/javascript">
+		
+	/*	var	x = 12;																				//"!="   havasar chei nshann e
+		var y = 24;
+		document.write(x + "" + y);
+		document.write("<br />");
+
+		var detectiv;
+		detectiv = x>y;
+		document.write( detectiv);
+		detectiv = x<y;
+		document.write( "<br />" + detectiv);
+		document.write( "<br />");
+
+
+		document.write("Bajanman Ardyunqum stacvox mnacord@ stanum enq % nshanov  " + "<<(  25%7=" + (25%7) + " )>>");	
+
+
+		document.write( "<br />");
+
+			//if
+
+				var vikluchatel = false;
+
+		if(x==y || vikluchatel == true){				//	"vikluchatel == true" sra poxaren kareli er uxxaki grel "vikluchatel"    // daun mi moraci havasarutyun stugelu hamar grel erku havasar "=="
+														//"!vikluchatel"  nuynne inch  "vikluchatel == false"
+
+			document.write("x=y   kam el vikluchatel@ true");				
+		}																									// "&&" EV, "||" kam    
+		else{
+			document.write("x!=y  ev vikluchateln el false");
+		}
+
+
+
+			//Switch
+
+
+		document.write( "<br />");	
+		switch (x) {
+			case 12: document.write("x=12 "); break;
+			case 13: document.write("x=13");  	break;					//"switch" operatori mej mec kam poqr chenq karox grel petqe hamematenq havasarutyun@ konkret tveri het
+			case 0:   document.write("x=0");	break;
+			default : document.write( "Chgitem");
+
+		}
+
+		document.write( "<br />");	
+
+		// 3rd dzev
+
+		x==y ?  document.write("x=y") : document.write("x!=y");
+
+		// CIKLER
+		document.write( "<br />");
+		document.write( "<br />");
+		document.write( "<br />");
+
+		var i;
+		//INQNURUYN  dzev mtaceci cikl sarqel 0.01 ov poxvox:)))
+		//i=i+0.01 depqum cxvum er 
+		for(i=0; i<=1000;i++){
+			var k=(i/100)
+			if(k%1==0.5)continue;{													//bac enq toxnum ayn toxer@ voronq 0.5   1.5  2.5 ....
+			document.write(k + "<br />");	
+		}
+		if(k==0.1)break;																//henc hasanq 0.1i cikl@ kayncrinq
+
+	}
+		document.write( "<br />");
+		document.write( "<br />");
+		document.write( "<br />");
+
+		var p=0;
+		while(p < 10){
+			p+=2;
+			document.write("ROBERTOOO"+"<br/>")
+
+		}
+
+		document.write( "<br />");
+		document.write( "<br />");
+		document.write( "<br />");
+
+		var xuynya=100;
+		do{																					//tarbervum e nranov vor 1 angam hastat anum e skzbic heto nor nayum pahanjnerin					
+			document.write(xuynya + "<br/>");
+		}while(xuynya<10)
+
+
+for(let xuy=2;xuy<=10;xuy=xuy+2){
+	alert(xuy);
+}
+
+for(let klir=0;klir<=100;){
+	klir = prompt("Greq 100ic mec tiv",200)
+}*/
+let number = 1;
+let n=prompt("Minchev vor tivn eq uzum durs berel parz tver@");
+if (n<=0)alert("Debilot parz tver@ bnakan tveric en");
+if (n>=2){
+	let l="2,"
+	l=l.fontcolor("white");
+	document.write(l);
+}
+for(let i=2;i<n;i++){
+
+
+	for(let x =2;x<=i;x++){
+		if (i%x == 0){
+			break;
+		}else if(x == (i-1)){
+			number++;
+			let f=String(i);
+			let k = ",";
+			k=k.fontcolor("white")
+			let p=f.fontcolor("white");
+			document.write(p+k);
+			//document.write(i + ",");	
+		}
+	
+
+	}
+	if(number%20 ==0){
+			document.write("<br/>"+ "<br/>");
+			number++;
+	}
+}
+
+
+	</script>
+</body>
+</html>
